@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomhuria|Lobster|Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="containerfluid">
+        <div class="container avenger">
+                <h1 class="display-3 h1header">Marvel Super Heroes</h1>                
+                <img src="assets/images/guess.png" id="guesswhoimage">
+        </div>
+    </header>
+
+    <div class="container-fluid" id="displaymaindiv">
+        <div class="container" id="maincontentdiv">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 col-md-12 text-centre">
+                    <div id="guessword"></div>
+                    <h2>Guess a letter : </h2>
+                    <input id="letterinput" type="text" maxlength="1"></input>
+                    <button id="guess" class="myButton">Guess</button>
+                    <h3>Wins : <span id="winValue"></span></h3>
+                    <h3>Looses : <span id="looseValue"></span></h3>
+                    <h3>Wrong Guesses : <span id="wrongguesses"></span></h3>
+                    <h3>Total Guesses : <span id="totalguesses"></span></h3>
+                    <button id="nextword" class="myButton">NextWord</button>
+                    <button id="restart" class="myButton">Restart</button>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <h3 id="msg"></h3>
+                    <img id="imgdiv"></img>
+                    <p id="wordinfo"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/gamescript.js"></script>
+</body>
+
+</html>
