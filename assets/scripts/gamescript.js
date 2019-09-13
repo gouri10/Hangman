@@ -120,6 +120,7 @@ $(document).ready(function () {
         $("#letterinput").val('').focus();
     });
 
+    
     $("#nextword").on("click", function () {
         $("#guessword").empty(); 
         hangman.totalGuesses = 12;
@@ -141,6 +142,14 @@ $(document).ready(function () {
 
 
     $("#restart").click();
+
+    $(document).keyup(function(event) {
+        if (event.key === "Enter") {
+            console.log(event.key);
+           $("#guess").click();
+        }
+    });
+
 
 });
 
