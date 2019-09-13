@@ -33,8 +33,7 @@ $(document).ready(function () {
         //to avoid the repeatition, i am using a loop to make sure each word appears once
         if(hangman.nextWordIndex<hangman.words.length)
         {
-        return hangman.words[hangman.nextWordIndex];
-        hangman.nextWordIndex++
+        return hangman.words[hangman.nextWordIndex++];        
         }
         else{
             hangman.nextWordIndex=0;
@@ -122,7 +121,7 @@ $(document).ready(function () {
     });
 
     $("#nextword").on("click", function () {
-        $("#guessword").empty();
+        $("#guessword").empty(); 
         hangman.totalGuesses = 12;
         $("#totalguesses").text(hangman.totalGuesses);
         hangman.randomguessedword = getRandomWordFromArray();
@@ -135,10 +134,13 @@ $(document).ready(function () {
         $("#msg").text("");
         $("#imgdiv").attr("src", "");
         $("#wordinfo").text("");
-        $("#letterinput").prop("disabled", false);
+        $("#letterinput").prop("disabled", false);               
+        $("#letterinput").css("background-color","aqua");
         $("#letterinput").val('').focus();
     });
 
 
     $("#restart").click();
+
 });
+
