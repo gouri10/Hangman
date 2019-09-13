@@ -19,9 +19,8 @@ header{
 .h1header{
 display:inline-block;
 color: yellow;
-font-weight: bold;
+font-weight: 4em;;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
 
 
@@ -231,7 +230,7 @@ h2,h3{
 
         p{
             font-size: 2em;
-        font-weight: bold;
+        font-weight: 3em;
         color: aqua;
         }
 

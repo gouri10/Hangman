@@ -132,7 +132,7 @@ $(document).ready(function () {
         $("#wrongguesses").text(hangman.wrongguessedvaluesString);
         hangman.filledpositions = 0;
         $("#msg").text("");
-        $("#imgdiv").attr("src", "");
+        $("#imgdiv").removeAttr();
         $("#wordinfo").text("");
         $("#letterinput").prop("disabled", false);               
         $("#letterinput").css("background-color","aqua");
